@@ -1,0 +1,11 @@
+docx
+Flask
+Jinja2
+joblib
+numpy
+PyPDF2
+python-docx
+scikit-learn
+scipy
+Werkzeug
+wordcloud
