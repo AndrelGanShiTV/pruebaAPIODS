@@ -2,6 +2,7 @@ from flask import Flask, jsonify, request
 from module.similitudes import calcular_similitud_archivo
 
 app = Flask(__name__)
+CORS(app)
 
 @app.route("/")
 def hello_world():  
