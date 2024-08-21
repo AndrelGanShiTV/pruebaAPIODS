@@ -9,3 +9,4 @@ scikit-learn
 scipy
 Werkzeug
 wordcloud
+Flask-CORS
