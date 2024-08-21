@@ -31,14 +31,8 @@ def upload_file():
         else:
             return jsonify({"error":"No se aceptan archivos distintos a .pdf o .docx"})
         results = calcular_similitud_archivo(filetyp, file)
-
-
-        # Procesamiento del archivo
-        file_content = file.read()  # Leer contenido del archivo
-        # Haz lo que necesites con file_content
-
         # Retornar alguna información
-        return results
+        return jsonify(results)
 
 if __name__ == "__main__":
     app.run(debug=True)
