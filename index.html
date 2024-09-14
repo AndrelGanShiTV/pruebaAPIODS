@@ -1,15 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Upload File</title>
-</head>
-<body>
-    <h1>Upload a file</h1>
-    <form action="https://pruebaapiods-4.onrender.com/upload" method="post" enctype="multipart/form-data">
-        <input type="file" name="file" required>
-        <input type="submit" value="Upload">
-    </form>
-</body>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="ods, sostenibilidad, Similitudes, objetivos de desarrollo sostenible, naciones unidas, organizaciones,"
+    />
+    <meta name="author" content="Andres y Paulina" />
+    <meta
+      name="description"
+      content="Analiza archivos que contengan relación con los objetivos de desarrollo sostenible de las naciones unidas"
+    />
+    <title>Analizador ODS</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #f0f4f8;
+        color: #333;
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        width: 80%;
+        margin: auto;
+        padding: 20px;
+      }
+      header {
+        background: #004d40;
+        color: white;
+        padding: 10px 0;
+        text-align: center;
+      }
+      h1 {
+        margin: 0;
+      }
+      section {
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .endpoint {
+        background: #e0f2f1;
+        border: 1px solid #004d40;
+        border-radius: 5px;
+        padding: 10px;
+        margin-top: 20px;
+      }
+      .endpoint code {
+        background: #004d40;
+        color: #fff;
+        padding: 5px;
+        border-radius: 5px;
+      }
+      footer {
+        text-align: center;
+        padding: 10px;
+        background: #004d40;
+        color: white;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Analizador ODS</h1>
+    </header>
+    <div class="container">
+      <section>
+        <h2>Bienvenido al Analizador de Archivos ODS</h2>
+        <p>
+          Este servicio te permite enviar archivos y recibir un análisis de los
+          porcentajes de similitud con los Objetivos de Desarrollo Sostenible
+          (ODS).
+        </p>
+        <div class="endpoint">
+          <h3>Cómo usar la API</h3>
+          <p>Envía tu archivo a través de la siguiente ruta:</p>
+          <code>https://pruebaapiods-4.onrender.com/upload</code>
+          <p>
+            Para utilizar el servicio, asegúrate de tener el enlace de la API
+            junto con la ruta especificada.
+          </p>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <p>&copy; 2024 Analizador ODS</p>
+    </footer>
+  </body>
 </html>
